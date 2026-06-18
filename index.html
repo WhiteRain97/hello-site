@@ -3,286 +3,303 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Fin Home Custom Contracting — Custom Home Remodeling in Dallas, TX</title>
-    <meta name="description" content="Serving the DFW Metro since 2006. Whole-home, kitchen, and bathroom remodels with a fixed plan and price before work starts." />
+    <title>Custom Home Remodeling in Dallas, TX | Fin Home Custom Contracting</title>
+    <meta name="description" content="Serving the DFW Metro since 2006. Whole-home, kitchen, and bathroom remodels with a fixed plan and price in hand before work starts." />
+    <link rel="preconnect" href="https://finhomecontracting.com" />
+    <link rel="preconnect" href="https://st.hzcdn.com" />
     <style>
       :root {
-        --brand: #7a1f24;
-        --brand-dark: #5a161a;
-        --ink: #1a1a1a;
-        --muted: #5a5a5a;
+        --brand: #6b1d20;
+        --brand-dark: #4f1518;
+        --gold: #b6892d;
+        --ink: #1f1f1f;
+        --muted: #6a6a6a;
         --bg: #ffffff;
-        --soft: #f6f3f0;
-        --line: #e7e2dc;
-        --accent: #c39a4a;
+        --soft: #f4efe9;
+        --line: #e7e0d6;
       }
       * { box-sizing: border-box; }
       html, body { margin: 0; padding: 0; }
       body {
-        font: 16px/1.6 "Helvetica Neue", Arial, system-ui, sans-serif;
-        color: var(--ink);
-        background: var(--bg);
+        font: 16px/1.65 "Inter", "Helvetica Neue", Arial, system-ui, sans-serif;
+        color: var(--ink); background: var(--bg);
       }
-      h1, h2, h3, h4 { font-family: Georgia, "Times New Roman", serif; line-height: 1.2; margin: 0 0 .5em; }
-      h1 { font-size: clamp(2rem, 4.5vw, 3.4rem); }
-      h2 { font-size: clamp(1.6rem, 3vw, 2.4rem); }
-      h3 { font-size: 1.25rem; }
+      h1, h2, h3, h4 {
+        font-family: "Playfair Display", Georgia, "Times New Roman", serif;
+        line-height: 1.15; margin: 0 0 .5em; letter-spacing: -.01em;
+      }
+      h1 { font-size: clamp(2.2rem, 5vw, 3.8rem); font-weight: 700; }
+      h2 { font-size: clamp(1.8rem, 3.3vw, 2.6rem); font-weight: 700; }
+      h3 { font-size: 1.2rem; }
+      img { max-width: 100%; display: block; }
       a { color: var(--brand); text-decoration: none; }
       a:hover { text-decoration: underline; }
       .container { max-width: 1200px; margin: 0 auto; padding: 0 1.25rem; }
+      .eyebrow {
+        text-transform: uppercase; letter-spacing: .18em;
+        font-size: .78rem; font-weight: 700; color: var(--brand);
+        margin: 0 0 .9rem;
+      }
       .btn {
         display: inline-block;
-        background: var(--brand);
-        color: #fff;
-        padding: .85rem 1.4rem;
-        border-radius: 2px;
-        font-weight: 700;
-        letter-spacing: .04em;
-        text-transform: uppercase;
-        font-size: .9rem;
-        border: none;
-        cursor: pointer;
-      }
-      .btn:hover { background: var(--brand-dark); text-decoration: none; }
-      .btn-outline {
-        background: transparent;
-        color: #fff;
-        border: 2px solid #fff;
-      }
-
-      /* Top bar */
-      .topbar {
-        background: var(--ink);
-        color: #fff;
-        font-size: .85rem;
-      }
-      .topbar .container {
-        display: flex; justify-content: space-between; align-items: center;
-        padding-top: .5rem; padding-bottom: .5rem;
-      }
-      .topbar a { color: #fff; }
-
-      /* Header / nav */
-      header.site {
-        border-bottom: 1px solid var(--line);
-        background: #fff;
-        position: sticky; top: 0; z-index: 10;
-      }
-      header.site .container {
-        display: flex; align-items: center; justify-content: space-between;
-        padding-top: 1rem; padding-bottom: 1rem;
-      }
-      .logo {
-        display: flex; align-items: center; gap: .75rem;
-      }
-      .logo-mark {
-        width: 48px; height: 48px;
         background: var(--brand); color: #fff;
-        display: grid; place-items: center;
-        font-family: Georgia, serif; font-weight: 700; font-size: 1.2rem;
-        border-radius: 2px;
+        padding: .95rem 1.6rem; border-radius: 2px;
+        font-weight: 700; letter-spacing: .08em;
+        text-transform: uppercase; font-size: .82rem;
+        border: none; cursor: pointer;
       }
-      .logo-text { line-height: 1.1; }
-      .logo-text strong { display: block; font-family: Georgia, serif; font-size: 1.1rem; }
-      .logo-text span { font-size: .75rem; color: var(--muted); letter-spacing: .06em; text-transform: uppercase; }
+      .btn:hover { background: var(--brand-dark); text-decoration: none; color: #fff; }
+      .btn-light { background: #fff; color: var(--brand); }
+      .btn-light:hover { background: var(--soft); color: var(--brand-dark); }
+      .btn-outline { background: transparent; color: #fff; border: 2px solid #fff; }
+
+      /* Top utility bar */
+      .topbar { background: var(--ink); color: #f0e9df; font-size: .8rem; letter-spacing: .08em; }
+      .topbar .container { display: flex; justify-content: space-between; align-items: center; padding: .55rem 1.25rem; flex-wrap: wrap; gap: .5rem; }
+      .topbar a { color: #f0e9df; }
+      .topbar .left { text-transform: uppercase; }
+
+      /* Header */
+      header.site { background: #fff; border-bottom: 1px solid var(--line); position: sticky; top: 0; z-index: 30; }
+      header.site .container { display: flex; align-items: center; justify-content: space-between; padding: .9rem 1.25rem; }
+      .logo { display: flex; align-items: center; gap: .85rem; }
+      .logo img { height: 56px; width: auto; }
+      .logo .word { font-family: "Playfair Display", Georgia, serif; line-height: 1; }
+      .logo .word strong { display: block; font-size: 1.05rem; color: var(--brand); letter-spacing: .04em; }
+      .logo .word span { font-size: .68rem; color: var(--muted); letter-spacing: .22em; text-transform: uppercase; }
       nav.primary ul {
-        display: flex; gap: 1.4rem; list-style: none; padding: 0; margin: 0;
-        font-size: .95rem;
+        display: flex; gap: 1.5rem; list-style: none; padding: 0; margin: 0;
+        font-size: .82rem; letter-spacing: .1em; text-transform: uppercase;
       }
-      nav.primary a { color: var(--ink); font-weight: 600; }
-      @media (max-width: 860px) { nav.primary { display: none; } }
+      nav.primary a { color: var(--ink); font-weight: 700; }
+      nav.primary a:hover { color: var(--brand); text-decoration: none; }
+      header .cta { display: flex; align-items: center; gap: 1rem; }
+      header .phone { font-weight: 700; color: var(--ink); font-size: .95rem; }
+      @media (max-width: 1000px) { nav.primary { display: none; } }
 
       /* Hero */
       .hero {
-        position: relative;
-        background:
-          linear-gradient(rgba(0,0,0,.55), rgba(0,0,0,.55)),
-          linear-gradient(135deg, #4a3326, #1a1a1a);
-        color: #fff;
-        padding: 5rem 0 6rem;
+        position: relative; color: #fff;
+        background: #1f1f1f;
+        overflow: hidden;
       }
-      .hero .container { display: grid; grid-template-columns: 1.4fr 1fr; gap: 3rem; align-items: center; }
-      @media (max-width: 860px) { .hero .container { grid-template-columns: 1fr; } }
+      .hero::before {
+        content: ""; position: absolute; inset: 0;
+        background:
+          linear-gradient(rgba(15,12,10,.65), rgba(15,12,10,.65)),
+          url("https://finhomecontracting.com/wp-content/uploads/2026/05/Keller_Cox_Kitchen1-1024x768.jpg") center/cover no-repeat;
+        z-index: 0;
+      }
+      .hero .container { position: relative; z-index: 1; padding-top: 5rem; padding-bottom: 5rem;
+        display: grid; grid-template-columns: 1.3fr 1fr; gap: 3.5rem; align-items: center; }
+      @media (max-width: 960px) { .hero .container { grid-template-columns: 1fr; padding: 3.5rem 1.25rem; } }
       .hero h1 { color: #fff; }
-      .hero p.lede { font-size: 1.15rem; max-width: 56ch; opacity: .9; margin-bottom: 1.8rem; }
-      .hero .ctas { display: flex; gap: .8rem; flex-wrap: wrap; }
+      .hero .eyebrow { color: #e6c982; }
+      .hero p.sub {
+        font-family: "Playfair Display", Georgia, serif; font-style: italic;
+        font-size: clamp(1.1rem, 1.8vw, 1.45rem);
+        max-width: 56ch; opacity: .95; margin: 0 0 1.8rem;
+        line-height: 1.45;
+      }
+      .hero .ctas { display: flex; gap: .9rem; flex-wrap: wrap; }
+      .hero .trust { margin-top: 2rem; display: flex; align-items: center; gap: 1rem; font-size: .85rem; opacity: .85; }
+      .hero .trust img { height: 60px; }
 
-      /* Estimate form */
+      /* Estimate card */
       .estimate {
         background: #fff; color: var(--ink);
-        padding: 1.75rem; border-radius: 4px;
-        box-shadow: 0 12px 30px rgba(0,0,0,.25);
+        padding: 2rem; border-radius: 4px;
+        box-shadow: 0 18px 50px rgba(0,0,0,.35);
       }
-      .estimate h3 { color: var(--brand); margin-bottom: .25em; }
-      .estimate p { color: var(--muted); margin-top: 0; font-size: .9rem; }
-      .estimate label { display: block; font-size: .8rem; font-weight: 700; text-transform: uppercase; letter-spacing: .05em; margin-top: .9rem; margin-bottom: .25rem; }
+      .estimate .eyebrow { margin-bottom: .3rem; }
+      .estimate h2 {
+        font-size: 1.5rem; margin-bottom: .25rem; color: var(--ink);
+      }
+      .estimate .reply { font-size: .82rem; color: var(--muted); margin: 0 0 1.2rem; }
+      .estimate label { display: block; font-size: .7rem; font-weight: 700; text-transform: uppercase; letter-spacing: .1em; margin-top: .85rem; margin-bottom: .3rem; color: var(--muted); }
       .estimate input, .estimate select {
-        width: 100%; padding: .65rem .75rem;
+        width: 100%; padding: .7rem .8rem;
         border: 1px solid var(--line); border-radius: 2px;
-        font: inherit;
+        font: inherit; background: #fff;
       }
-      .estimate .btn { width: 100%; margin-top: 1.2rem; }
+      .estimate .btn { width: 100%; margin-top: 1.25rem; }
+      .estimate .privacy { font-size: .72rem; color: var(--muted); margin: .8rem 0 0; text-align: center; }
 
       /* Section base */
-      section { padding: 4rem 0; }
-      .eyebrow {
-        text-transform: uppercase; letter-spacing: .12em;
-        font-size: .8rem; font-weight: 700; color: var(--brand);
-        margin-bottom: .5rem;
-      }
-      .section-head { text-align: center; max-width: 720px; margin: 0 auto 2.5rem; }
-      .section-head p { color: var(--muted); }
+      section { padding: 5rem 0; }
+      .section-head { text-align: center; max-width: 760px; margin: 0 auto 3rem; }
+      .section-head p { color: var(--muted); font-size: 1.05rem; }
 
-      /* Badges */
-      .badges {
-        background: var(--soft);
-        text-align: center;
-      }
-      .badges .row {
-        display: flex; gap: 1.5rem; justify-content: center; align-items: center; flex-wrap: wrap;
-      }
-      .badge {
-        width: 90px; height: 90px; border-radius: 50%;
-        background: #fff; border: 3px solid var(--accent);
-        display: grid; place-items: center; text-align: center;
-        font-family: Georgia, serif; font-size: .8rem; color: var(--ink);
-        font-weight: 700;
-      }
-      .badges h2 { margin-bottom: 1.5rem; }
+      /* Stories / testimonials strip */
+      .stories { background: var(--soft); text-align: center; padding: 4rem 0; }
+      .stories h2 { font-style: italic; }
+      .stories .stars { color: var(--gold); font-size: 1.4rem; letter-spacing: .15em; margin: .5rem 0 1.2rem; }
 
       /* Portfolio */
-      .grid-3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem; }
-      @media (max-width: 860px) { .grid-3 { grid-template-columns: 1fr; } }
+      .portfolio .grid {
+        display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem;
+      }
+      @media (max-width: 900px) { .portfolio .grid { grid-template-columns: 1fr; } }
       .card {
-        background: #fff; border: 1px solid var(--line); border-radius: 4px;
+        background: #fff; border: 1px solid var(--line);
         overflow: hidden; display: flex; flex-direction: column;
+        transition: transform .2s ease, box-shadow .2s ease;
       }
-      .card .img {
-        aspect-ratio: 4/3;
-        background: linear-gradient(135deg, #b8a994, #6e5a44);
+      .card:hover { transform: translateY(-3px); box-shadow: 0 12px 30px rgba(0,0,0,.08); }
+      .card .img { aspect-ratio: 4/3; overflow: hidden; background: #ddd; }
+      .card .img img { width: 100%; height: 100%; object-fit: cover; }
+      .card .body { padding: 1.4rem 1.4rem 1.6rem; }
+      .card h3 { margin-bottom: .6rem; font-size: 1.15rem; }
+      .card .view {
+        font-weight: 700; text-transform: uppercase; font-size: .78rem;
+        letter-spacing: .14em; color: var(--brand);
       }
-      .card .img.k2 { background: linear-gradient(135deg, #d6c2a2, #7a1f24); }
-      .card .img.k3 { background: linear-gradient(135deg, #6b7a5e, #2c3e2c); }
-      .card .body { padding: 1.25rem 1.25rem 1.5rem; }
-      .card h3 { margin-bottom: .5rem; }
-      .card a { font-weight: 700; text-transform: uppercase; font-size: .85rem; letter-spacing: .06em; }
 
       /* Services */
       .services { background: var(--soft); }
-      .grid-3 .service {
-        background: #fff; padding: 1.75rem;
-        border: 1px solid var(--line); border-radius: 4px;
+      .services .grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem; }
+      @media (max-width: 900px) { .services .grid { grid-template-columns: 1fr; } }
+      .service {
+        background: #fff; border: 1px solid var(--line);
+        display: flex; flex-direction: column;
       }
-      .service .icon {
-        width: 44px; height: 44px; border-radius: 50%;
-        background: var(--brand); color: #fff;
-        display: grid; place-items: center; font-weight: 700;
-        margin-bottom: 1rem;
+      .service .img { aspect-ratio: 16/10; overflow: hidden; background: #ddd; }
+      .service .img img { width: 100%; height: 100%; object-fit: cover; }
+      .service .body { padding: 1.5rem 1.5rem 1.7rem; flex: 1; display: flex; flex-direction: column; }
+      .service h3 { color: var(--brand); font-size: 1.3rem; margin-bottom: .5rem; }
+      .service p { color: var(--muted); margin: 0 0 1.2rem; flex: 1; }
+      .service .more {
+        font-weight: 700; text-transform: uppercase; font-size: .78rem;
+        letter-spacing: .14em; color: var(--brand);
       }
-      .service h3 { color: var(--brand); }
-      .service p { color: var(--muted); margin: 0 0 1rem; }
 
-      /* Why */
-      .why .container { display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; align-items: center; }
-      @media (max-width: 860px) { .why .container { grid-template-columns: 1fr; } }
-      .why .image {
-        aspect-ratio: 5/4;
-        background: linear-gradient(135deg, #a07555, #3d2a1f);
-        border-radius: 4px;
+      /* Why us */
+      .why { background: #fff; }
+      .why .container { display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items: center; }
+      @media (max-width: 900px) { .why .container { grid-template-columns: 1fr; } }
+      .why .image img { width: 100%; aspect-ratio: 5/4; object-fit: cover; }
+      .warranty { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem; margin-top: 1.8rem; }
+      .warranty div { background: var(--soft); padding: 1.1rem; border-left: 4px solid var(--brand); }
+      .warranty strong {
+        display: block; font-family: "Playfair Display", Georgia, serif;
+        font-size: 1.6rem; color: var(--brand); line-height: 1;
       }
-      .warranty {
-        display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem;
-        margin-top: 1.5rem;
-      }
-      .warranty div {
-        background: var(--soft); padding: 1rem; border-left: 4px solid var(--brand);
-      }
-      .warranty strong { display: block; font-size: 1.4rem; color: var(--brand); font-family: Georgia, serif; }
-      .warranty span { font-size: .85rem; color: var(--muted); }
+      .warranty span { font-size: .72rem; text-transform: uppercase; letter-spacing: .12em; color: var(--muted); }
 
       /* Process */
-      .process { background: var(--ink); color: #fff; }
+      .process { background: var(--ink); color: #f0e9df; }
       .process h2 { color: #fff; }
-      .process .eyebrow { color: var(--accent); }
-      .process .steps { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1.5rem; }
-      @media (max-width: 860px) { .process .steps { grid-template-columns: 1fr 1fr; } }
+      .process .eyebrow { color: var(--gold); }
+      .process .steps { display: grid; grid-template-columns: repeat(4, 1fr); gap: 2rem; }
+      @media (max-width: 900px) { .process .steps { grid-template-columns: 1fr 1fr; } }
       .step { text-align: center; }
       .step .num {
-        width: 60px; height: 60px; border-radius: 50%;
-        background: var(--brand); margin: 0 auto 1rem;
+        width: 70px; height: 70px; border-radius: 50%;
+        background: transparent; border: 2px solid var(--gold);
+        color: var(--gold); margin: 0 auto 1.2rem;
         display: grid; place-items: center;
-        font-family: Georgia, serif; font-size: 1.5rem; font-weight: 700;
+        font-family: "Playfair Display", Georgia, serif;
+        font-size: 1.6rem; font-weight: 700;
       }
-      .step h3 { color: #fff; }
-      .step p { color: rgba(255,255,255,.7); font-size: .95rem; }
+      .step h3 { color: #fff; margin-bottom: .5rem; }
+      .step p { color: rgba(240,233,223,.75); font-size: .95rem; margin: 0; }
+
+      /* Houzz strip */
+      .houzz { background: #fff; text-align: center; }
+      .houzz .row { display: flex; gap: 1.5rem; justify-content: center; align-items: center; flex-wrap: wrap; margin-top: 1.5rem; }
+      .houzz img { height: 110px; width: auto; }
 
       /* Cost guides */
-      .grid-4 { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1.25rem; }
-      @media (max-width: 860px) { .grid-4 { grid-template-columns: 1fr 1fr; } }
-      .guide .img { aspect-ratio: 1; background: linear-gradient(135deg, #c9b89a, #7a1f24); border-radius: 4px; margin-bottom: .75rem; }
-      .guide h4 { margin: 0 0 .25rem; font-size: 1rem; }
-      .guide a { font-size: .85rem; text-transform: uppercase; letter-spacing: .06em; font-weight: 700; }
+      .guides { background: var(--soft); }
+      .guides .grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1.5rem; }
+      @media (max-width: 900px) { .guides .grid { grid-template-columns: 1fr 1fr; } }
+      .guide {
+        background: #fff; border: 1px solid var(--line);
+        display: flex; flex-direction: column;
+      }
+      .guide .img { aspect-ratio: 1; overflow: hidden; background: #ddd; }
+      .guide .img img { width: 100%; height: 100%; object-fit: cover; }
+      .guide .body { padding: 1.2rem 1.2rem 1.4rem; flex: 1; display: flex; flex-direction: column; gap: .5rem; }
+      .guide h4 { margin: 0; font-family: "Playfair Display", Georgia, serif; font-size: 1.02rem; line-height: 1.3; }
+      .guide .download {
+        margin-top: auto; font-weight: 700; text-transform: uppercase;
+        font-size: .74rem; letter-spacing: .14em; color: var(--brand);
+      }
 
       /* Owner */
-      .owner { background: var(--soft); }
-      .owner .container { display: grid; grid-template-columns: 1fr 1.5fr; gap: 3rem; align-items: center; }
-      @media (max-width: 860px) { .owner .container { grid-template-columns: 1fr; } }
-      .owner .photo {
-        aspect-ratio: 1;
-        background: linear-gradient(135deg, #8a6d4d, #3b2a1c);
-        border-radius: 4px;
+      .owner { background: #fff; }
+      .owner .container { display: grid; grid-template-columns: 1fr 1.4fr; gap: 4rem; align-items: center; }
+      @media (max-width: 900px) { .owner .container { grid-template-columns: 1fr; } }
+      .owner .photo img { width: 100%; aspect-ratio: 1; object-fit: cover; border-radius: 4px; }
+      .owner h2 { font-style: italic; }
+      .owner p { color: #3d3d3d; font-size: 1.02rem; }
+      .owner .sig {
+        font-family: "Playfair Display", Georgia, serif;
+        font-style: italic; font-size: 1.4rem;
+        color: var(--brand); margin-top: 1rem;
       }
-      blockquote { margin: 0 0 1rem; font-style: italic; color: var(--muted); font-size: 1.05rem; }
 
       /* FAQ */
-      details {
-        border-bottom: 1px solid var(--line);
-        padding: 1.1rem 0;
-      }
+      .faqs { background: var(--soft); }
+      .faqs .wrap { max-width: 820px; margin: 0 auto; }
+      details { background: #fff; border: 1px solid var(--line); padding: 1.1rem 1.3rem; margin-bottom: .75rem; }
       summary {
-        font-family: Georgia, serif; font-size: 1.1rem;
-        cursor: pointer; font-weight: 700;
-        list-style: none;
-        display: flex; justify-content: space-between; align-items: center;
+        font-family: "Playfair Display", Georgia, serif; font-size: 1.1rem;
+        cursor: pointer; font-weight: 700; list-style: none;
+        display: flex; justify-content: space-between; align-items: center; gap: 1rem;
+        color: var(--ink);
       }
       summary::-webkit-details-marker { display: none; }
-      summary::after { content: "+"; color: var(--brand); font-size: 1.5rem; font-weight: 400; }
+      summary::after { content: "+"; color: var(--brand); font-size: 1.6rem; font-weight: 400; line-height: 1; }
       details[open] summary::after { content: "−"; }
-      details p { color: var(--muted); margin: .8rem 0 0; }
+      details p { color: var(--muted); margin: .9rem 0 0; }
 
-      /* CTA strip */
-      .cta-strip {
-        background: var(--brand); color: #fff; text-align: center;
+      /* Contact strip */
+      .contact-strip {
+        background: var(--brand); color: #fff; text-align: center; padding: 4.5rem 0;
       }
-      .cta-strip h2 { color: #fff; }
-      .cta-strip p { opacity: .9; max-width: 60ch; margin: 0 auto 1.5rem; }
+      .contact-strip h2 { color: #fff; }
+      .contact-strip p { opacity: .92; max-width: 60ch; margin: 0 auto 1.8rem; font-size: 1.08rem; }
+      .contact-strip .btns { display: flex; justify-content: center; gap: .9rem; flex-wrap: wrap; }
 
       /* Footer */
       footer {
-        background: var(--ink); color: #cfc8c0; padding: 3.5rem 0 1.5rem;
+        background: #16110d; color: #cfc6b8; padding: 4rem 0 1.5rem;
         font-size: .9rem;
       }
-      footer h4 { color: #fff; font-family: Helvetica, sans-serif; font-size: .85rem; text-transform: uppercase; letter-spacing: .08em; margin-bottom: .8rem; }
-      footer a { color: #cfc8c0; }
-      footer .grid { display: grid; grid-template-columns: 1.5fr 1fr 1fr 1fr 1fr; gap: 2rem; }
-      @media (max-width: 860px) { footer .grid { grid-template-columns: 1fr 1fr; } }
+      footer h4 {
+        color: #fff; font-family: "Inter", Helvetica, sans-serif;
+        font-size: .78rem; text-transform: uppercase; letter-spacing: .14em;
+        margin-bottom: 1rem; font-weight: 700;
+      }
+      footer a { color: #cfc6b8; }
+      footer .grid { display: grid; grid-template-columns: 1.7fr 1fr 1fr 1fr 1fr; gap: 2rem; }
+      @media (max-width: 900px) { footer .grid { grid-template-columns: 1fr 1fr; } }
       footer ul { list-style: none; padding: 0; margin: 0; }
-      footer li { margin-bottom: .35rem; }
+      footer li { margin-bottom: .45rem; }
+      footer .logo .word strong { color: #fff; }
+      footer .logo .word span { color: #8a8174; }
+      .social { display: flex; gap: .7rem; margin-top: 1rem; }
+      .social a {
+        width: 36px; height: 36px; border-radius: 50%; border: 1px solid #3a3329;
+        display: grid; place-items: center; color: #cfc6b8; font-size: .9rem;
+      }
+      .social a:hover { background: var(--brand); border-color: var(--brand); color: #fff; }
       .legal {
-        border-top: 1px solid #333; margin-top: 2.5rem; padding-top: 1.25rem;
+        border-top: 1px solid #2a241d; margin-top: 3rem; padding-top: 1.25rem;
         display: flex; justify-content: space-between; flex-wrap: wrap; gap: 1rem;
-        font-size: .8rem; color: #8a857e;
+        font-size: .78rem; color: #807767;
       }
     </style>
   </head>
   <body>
     <div class="topbar">
       <div class="container">
-        <span>Serving the DFW Metro Since 2006</span>
+        <span class="left">Serving the DFW Metro Since 2006</span>
         <span>
           <a href="tel:2149726402">📞 (214) 972-6402</a>
           &nbsp;·&nbsp;
-          <a href="mailto:finhomecc@gmail.com">finhomecc@gmail.com</a>
+          <a href="mailto:finhomecc@gmail.com">✉ finhomecc@gmail.com</a>
         </span>
       </div>
     </div>
@@ -290,11 +307,7 @@
     <header class="site">
       <div class="container">
         <a class="logo" href="#">
-          <div class="logo-mark">FH</div>
-          <div class="logo-text">
-            <strong>Fin Home</strong>
-            <span>Custom Contracting</span>
-          </div>
+          <img src="https://finhomecontracting.com/wp-content/uploads/2025/11/FHLogo_BRG_Web.png" alt="Fin Home Custom Contracting" />
         </a>
         <nav class="primary">
           <ul>
@@ -307,23 +320,32 @@
             <li><a href="#contact">Contact</a></li>
           </ul>
         </nav>
+        <div class="cta">
+          <span class="phone">(214) 972-6402</span>
+          <a class="btn" href="#contact">Free Estimate</a>
+        </div>
       </div>
     </header>
 
     <section class="hero">
       <div class="container">
         <div>
-          <p class="eyebrow" style="color: var(--accent);">DFW · Since 2006</p>
+          <p class="eyebrow">Serving the DFW Metro Since 2006</p>
           <h1>Custom Home Remodeling in Dallas, TX</h1>
-          <p class="lede">Your kitchen, bathroom, or whole home — with the full plan and price in hand before work starts.</p>
+          <p class="sub">Your kitchen, bathroom, or whole home — with the full plan and price in hand before work starts.</p>
           <div class="ctas">
-            <a class="btn" href="#contact">Get a Free Estimate</a>
-            <a class="btn btn-outline" href="#testimonials">Watch Remodeling Stories</a>
+            <a class="btn btn-light" href="#contact">Get a Free Estimate</a>
+            <a class="btn btn-outline" href="#testimonials">▶ Watch Remodeling Stories</a>
+          </div>
+          <div class="trust">
+            <img src="https://st.hzcdn.com/static/badge_71_8@3x.png" alt="Best of Houzz 2026" />
+            <span>6× Best of Houzz · 2021–2026</span>
           </div>
         </div>
-        <form class="estimate" onsubmit="event.preventDefault(); alert('Thanks — we\'ll be in touch.');">
-          <h3>Request an Estimate</h3>
-          <p>Fixed scope and price before work begins.</p>
+        <form class="estimate" onsubmit="event.preventDefault(); alert('Thanks — we\'ll reply within 24 business hours.');">
+          <p class="eyebrow">No Pressure · Reply in 24 Hrs</p>
+          <h2>Get Your Remodeling Estimate</h2>
+          <p class="reply">Tell us about your project. We'll respond within 24 business hours.</p>
           <label for="name">Name</label>
           <input id="name" type="text" required />
           <label for="phone">Phone</label>
@@ -338,101 +360,109 @@
             <option>Home Addition</option>
             <option>Custom Home Build</option>
           </select>
-          <button class="btn" type="submit">Get My Estimate</button>
+          <button class="btn" type="submit">Request My Estimate</button>
+          <p class="privacy">Your information is 100% secure.</p>
         </form>
       </div>
     </section>
 
-    <section class="badges">
+    <section class="stories" id="testimonials">
       <div class="container">
-        <h2>6× Best of Houzz</h2>
-        <p style="color: var(--muted); margin-top: 0;">Recognized by homeowners for service and design, 2021–2026.</p>
-        <div class="row" style="margin-top: 1.5rem;">
-          <div class="badge">Best of<br/>Houzz<br/>2021</div>
-          <div class="badge">Best of<br/>Houzz<br/>2022</div>
-          <div class="badge">Best of<br/>Houzz<br/>2023</div>
-          <div class="badge">Best of<br/>Houzz<br/>2024</div>
-          <div class="badge">Best of<br/>Houzz<br/>2025</div>
-          <div class="badge">Best of<br/>Houzz<br/>2026</div>
-        </div>
+        <p class="eyebrow">Fin Home Stories</p>
+        <h2>What Dallas Homeowners Say</h2>
+        <div class="stars">★ ★ ★ ★ ★</div>
+        <p style="max-width: 60ch; margin: 0 auto 1.5rem; color: var(--muted);">Hear directly from the families we've remodeled for across the DFW Metroplex.</p>
+        <a class="btn" href="#">Watch Their Stories</a>
       </div>
     </section>
 
-    <section id="portfolio">
+    <section class="portfolio" id="portfolio">
       <div class="container">
         <div class="section-head">
-          <p class="eyebrow">Portfolio</p>
-          <h2>Recent Whole-Home Transformations</h2>
-          <p>A few projects from across the DFW Metro.</p>
+          <p class="eyebrow">Project Portfolio</p>
+          <h2>Our Work Speaks for Itself</h2>
         </div>
-        <div class="grid-3">
+        <div class="grid">
           <article class="card">
-            <div class="img"></div>
+            <div class="img"><img loading="lazy" src="https://finhomecontracting.com/wp-content/uploads/2026/05/Addison_Home5-1024x767.png" alt="Addison whole-home remodel" /></div>
             <div class="body">
               <h3>Whole-Home Remodel in Addison, TX</h3>
-              <a href="#">View Gallery →</a>
+              <a class="view" href="#">View Gallery →</a>
             </div>
           </article>
           <article class="card">
-            <div class="img k2"></div>
+            <div class="img"><img loading="lazy" src="https://finhomecontracting.com/wp-content/uploads/2026/05/Coppell_3_Home4-820x1024.jpg" alt="Coppell whole-home remodel" /></div>
             <div class="body">
               <h3>Whole-Home Remodel in Coppell, TX</h3>
-              <a href="#">View Gallery →</a>
+              <a class="view" href="#">View Gallery →</a>
             </div>
           </article>
           <article class="card">
-            <div class="img k3"></div>
+            <div class="img"><img loading="lazy" src="https://finhomecontracting.com/wp-content/uploads/2026/05/Irving_Lowery_Home3-1024x768.jpg" alt="Irving Lowery whole-home remodel" /></div>
             <div class="body">
               <h3>The Lowerys' Whole-Home Remodel in Irving, TX</h3>
-              <a href="#">View Gallery →</a>
+              <a class="view" href="#">View Gallery →</a>
             </div>
           </article>
         </div>
       </div>
     </section>
 
-    <section id="services" class="services">
+    <section class="services" id="services">
       <div class="container">
         <div class="section-head">
-          <p class="eyebrow">Our Services</p>
-          <h2>Built Around How You Live</h2>
+          <p class="eyebrow">Remodeling Services</p>
+          <h2>What Would You Like to Change About Your Home?</h2>
+          <p>A closer look at each service we offer across the DFW Metro.</p>
         </div>
-        <div class="grid-3">
+        <div class="grid">
           <div class="service">
-            <div class="icon">◇</div>
-            <h3>Whole-Home Remodeling</h3>
-            <p>Reworking floor plans, opening walls, and complete interior transformations.</p>
-            <a href="#">Learn more →</a>
+            <div class="img"><img loading="lazy" src="https://finhomecontracting.com/wp-content/uploads/2026/05/Addison_Home5-1024x767.png" alt="Whole-home remodeling" /></div>
+            <div class="body">
+              <h3>Whole-Home Remodeling</h3>
+              <p>Reworking floor plans, opening walls, and complete interior transformations. If your home no longer fits your life, we'll make it fit again.</p>
+              <a class="more" href="#">Whole-Home Remodeling in Dallas →</a>
+            </div>
           </div>
           <div class="service">
-            <div class="icon">◇</div>
-            <h3>Home Additions</h3>
-            <p>Room additions, second stories, and structural expansions.</p>
-            <a href="#">Learn more →</a>
+            <div class="img"><img loading="lazy" src="https://finhomecontracting.com/wp-content/uploads/2026/05/Coppell_3_Home4-820x1024.jpg" alt="Home additions" /></div>
+            <div class="body">
+              <h3>Home Additions</h3>
+              <p>Room additions, second stories, and structural expansions that blend seamlessly with your existing home.</p>
+              <a class="more" href="#">Home Additions in Dallas →</a>
+            </div>
           </div>
           <div class="service">
-            <div class="icon">◇</div>
-            <h3>Luxury Home Remodeling</h3>
-            <p>High-end remodels for homeowners who expect refined finishes.</p>
-            <a href="#">Learn more →</a>
+            <div class="img"><img loading="lazy" src="https://finhomecontracting.com/wp-content/uploads/2026/03/beautiful-texas-kitchens9-1024x683.jpg" alt="Luxury remodeling" /></div>
+            <div class="body">
+              <h3>Luxury Home Remodeling</h3>
+              <p>High-end remodels for homeowners who expect a refined finish, from materials to millwork.</p>
+              <a class="more" href="#">Luxury Remodeling in Dallas →</a>
+            </div>
           </div>
           <div class="service">
-            <div class="icon">◇</div>
-            <h3>Kitchen Remodeling</h3>
-            <p>Layout, cabinetry, and custom work tailored to how you cook and gather.</p>
-            <a href="#">Learn more →</a>
+            <div class="img"><img loading="lazy" src="https://finhomecontracting.com/wp-content/uploads/2026/05/Frisco_Kitchen2-1024x1024.jpg" alt="Kitchen remodeling" /></div>
+            <div class="body">
+              <h3>Kitchen Remodeling</h3>
+              <p>Your kitchen should work the way you cook and gather. Layout changes, custom cabinetry, countertops, lighting, and full gut renovations.</p>
+              <a class="more" href="#">Kitchen Remodeling in Dallas →</a>
+            </div>
           </div>
           <div class="service">
-            <div class="icon">◇</div>
-            <h3>Bathroom Remodeling</h3>
-            <p>Waterproofing done right, with spa-style options that last.</p>
-            <a href="#">Learn more →</a>
+            <div class="img"><img loading="lazy" src="https://finhomecontracting.com/wp-content/uploads/2026/03/beautiful-dfw-bathroom-1024x681.jpg" alt="Bathroom remodeling" /></div>
+            <div class="body">
+              <h3>Bathroom Remodeling</h3>
+              <p>From spa-style primary baths to smarter guest baths, we rebuild around how you actually use it — with waterproofing done right the first time.</p>
+              <a class="more" href="#">Bathroom Remodeling in Dallas →</a>
+            </div>
           </div>
           <div class="service">
-            <div class="icon">◇</div>
-            <h3>Custom Home Building</h3>
-            <p>From the ground up in DFW and the Graham, TX area.</p>
-            <a href="#">Learn more →</a>
+            <div class="img"><img loading="lazy" src="https://finhomecontracting.com/wp-content/uploads/2026/01/coast-houses-1024x685.jpg" alt="Custom home building" /></div>
+            <div class="body">
+              <h3>Custom Home Building</h3>
+              <p>Building from the ground up in the Dallas area or around Graham, TX? We design and build custom homes too.</p>
+              <a class="more" href="#">Custom Home Builder in Dallas →</a>
+            </div>
           </div>
         </div>
       </div>
@@ -440,11 +470,14 @@
 
     <section class="why">
       <div class="container">
-        <div class="image"></div>
+        <div class="image">
+          <img loading="lazy" src="https://finhomecontracting.com/wp-content/uploads/2026/05/Keller_Cox_Kitchen4-768x1024.jpg" alt="Custom Dallas kitchen remodel" />
+        </div>
         <div>
-          <p class="eyebrow">Why Fin Home</p>
+          <p class="eyebrow">Why Homeowners Choose Fin Home</p>
           <h2>A Remodel Without the Guesswork</h2>
-          <p>Fixed scope, clear schedule, and one point of contact from design through final walkthrough. Two decades of DFW projects backing every line item.</p>
+          <p>If you've put off remodeling because you've heard the horror stories, you're in the right place. When you work with Fin Home, you get a fixed scope, a clear schedule, and one point of contact from design through final walkthrough.</p>
+          <p>Erik and the team have spent two decades remodeling homes across the greater Dallas area — from older homes inside the loop to newer builds in the northern suburbs — and every project carries our written warranty.</p>
           <div class="warranty">
             <div><strong>1 yr</strong><span>Workmanship</span></div>
             <div><strong>2 yrs</strong><span>Major Systems</span></div>
@@ -457,83 +490,149 @@
     <section class="process">
       <div class="container">
         <div class="section-head">
-          <p class="eyebrow">Our Process</p>
-          <h2>The Fin Home Process</h2>
+          <p class="eyebrow">The Fin Home Process</p>
+          <h2>How Your Remodel Works</h2>
         </div>
         <div class="steps">
-          <div class="step"><div class="num">1</div><h3>Consultation</h3><p>We listen first — your goals, your home, your budget.</p></div>
-          <div class="step"><div class="num">2</div><h3>Design & Fixed Pricing</h3><p>Full plan and price before anyone swings a hammer.</p></div>
-          <div class="step"><div class="num">3</div><h3>Build</h3><p>One project manager, clean job sites, weekly updates.</p></div>
-          <div class="step"><div class="num">4</div><h3>Walkthrough & Warranty</h3><p>Final review and warranty coverage you can hold us to.</p></div>
+          <div class="step">
+            <div class="num">1</div>
+            <h3>Consultation</h3>
+            <p>Tell us what you want to change. We'll walk your space, listen, and give straight answers on what's possible within your budget.</p>
+          </div>
+          <div class="step">
+            <div class="num">2</div>
+            <h3>Design &amp; Fixed Pricing</h3>
+            <p>You approve the plans, selections, and a detailed price before work begins. No allowance games, no moving targets.</p>
+          </div>
+          <div class="step">
+            <div class="num">3</div>
+            <h3>Build</h3>
+            <p>A dedicated project lead keeps you updated, your home protected, and the schedule honest.</p>
+          </div>
+          <div class="step">
+            <div class="num">4</div>
+            <h3>Walkthrough &amp; Warranty</h3>
+            <p>We don't leave until you're happy — and we stay reachable long after move-in.</p>
+          </div>
         </div>
       </div>
     </section>
 
-    <section>
+    <section class="houzz">
+      <div class="container">
+        <p class="eyebrow">Houzz Awards &amp; Recognition</p>
+        <h2>6× Best of Houzz</h2>
+        <p style="color: var(--muted); max-width: 56ch; margin: .5rem auto 0;">Recognized by Dallas homeowners for service and design, 2021 through 2026.</p>
+        <div class="row">
+          <img loading="lazy" src="https://st.hzcdn.com/static/badge_54_240.png" alt="Best of Houzz 2021" />
+          <img loading="lazy" src="https://st.hzcdn.com/static/badge_57_240.png" alt="Best of Houzz 2022" />
+          <img loading="lazy" src="https://st.hzcdn.com/static/badge_60_240.png" alt="Best of Houzz 2023" />
+          <img loading="lazy" src="https://st.hzcdn.com/static/badge_64_8@3x.png" alt="Best of Houzz 2024" />
+          <img loading="lazy" src="https://st.hzcdn.com/static/badge_67_8@3x.png" alt="Best of Houzz 2025" />
+          <img loading="lazy" src="https://st.hzcdn.com/static/badge_71_8@3x.png" alt="Best of Houzz 2026" />
+        </div>
+      </div>
+    </section>
+
+    <section class="guides">
       <div class="container">
         <div class="section-head">
           <p class="eyebrow">2026 Cost Guides</p>
-          <h2>Know Before You Build</h2>
+          <h2>Know What Your Remodel Should Cost</h2>
+          <p>Real 2026 pricing from projects across the Dallas–Fort Worth metroplex.</p>
         </div>
-        <div class="grid-4">
-          <div class="guide"><div class="img"></div><h4>DFW Home Remodeling Cost</h4><a href="#">Read guide →</a></div>
-          <div class="guide"><div class="img"></div><h4>Kitchen Remodeling Cost</h4><a href="#">Read guide →</a></div>
-          <div class="guide"><div class="img"></div><h4>Bathroom Remodeling Cost</h4><a href="#">Read guide →</a></div>
-          <div class="guide"><div class="img"></div><h4>Home Building Cost Guide</h4><a href="#">Read guide →</a></div>
+        <div class="grid">
+          <div class="guide">
+            <div class="img"><img loading="lazy" src="https://finhomecontracting.com/wp-content/uploads/2026/05/Addison_Home5-1024x767.png" alt="" /></div>
+            <div class="body">
+              <h4>Home Remodeling Cost in DFW (2026 Full Guide)</h4>
+              <a class="download" href="#">Download Guide →</a>
+            </div>
+          </div>
+          <div class="guide">
+            <div class="img"><img loading="lazy" src="https://finhomecontracting.com/wp-content/uploads/2026/05/Frisco_Kitchen2-1024x1024.jpg" alt="" /></div>
+            <div class="body">
+              <h4>How Much Does a Kitchen Remodel Cost in DFW?</h4>
+              <a class="download" href="#">Download Guide →</a>
+            </div>
+          </div>
+          <div class="guide">
+            <div class="img"><img loading="lazy" src="https://finhomecontracting.com/wp-content/uploads/2026/03/beautiful-dfw-bathroom-1024x681.jpg" alt="" /></div>
+            <div class="body">
+              <h4>How Much Does a Bathroom Remodel Cost in DFW?</h4>
+              <a class="download" href="#">Download Guide →</a>
+            </div>
+          </div>
+          <div class="guide">
+            <div class="img"><img loading="lazy" src="https://finhomecontracting.com/wp-content/uploads/2026/01/coast-houses-1024x685.jpg" alt="" /></div>
+            <div class="body">
+              <h4>DFW Home Building Cost Guide 2026</h4>
+              <a class="download" href="#">Download Guide →</a>
+            </div>
+          </div>
         </div>
       </div>
     </section>
 
-    <section id="testimonials" class="owner">
+    <section class="owner">
       <div class="container">
-        <div class="photo"></div>
+        <div class="photo">
+          <img loading="lazy" src="https://finhomecontracting.com/wp-content/uploads/2026/06/ErikHeadshotGemini.jpeg" alt="Erik Finholm, owner of Fin Home Custom Contracting" />
+        </div>
         <div>
           <p class="eyebrow">Meet the Owner</p>
-          <h2>Erik Finholm</h2>
-          <blockquote>"I built my first house from the ground up in 2006. In 2018 I started Fin Home Custom Contracting to do things my own way: real craftsmanship paired with a process that's honest and easy for homeowners to be part of."</blockquote>
-          <a class="btn" href="#contact">Talk to Erik</a>
+          <h2>Hi, I'm Erik Finholm.</h2>
+          <p>I built my first house from the ground up in 2006. I wasn't trying to start a company back then — I just wanted to see if I could take a home all the way from foundation to finishes and do it well. That first build set the standard I've held to ever since.</p>
+          <p>In the years after, I spent my time on remodels and new builds across the greater Dallas area, learning something from every project and getting to know the tradespeople and suppliers I still rely on today. In 2018 I started Fin Home Custom Contracting to do things my own way: real craftsmanship paired with a process that's honest and easy for homeowners to be part of.</p>
+          <p class="sig">— Erik</p>
         </div>
       </div>
     </section>
 
-    <section>
-      <div class="container" style="max-width: 820px;">
+    <section class="faqs">
+      <div class="container">
         <div class="section-head">
           <p class="eyebrow">FAQs</p>
-          <h2>Common Questions</h2>
+          <h2>Your Remodeling Questions, Answered</h2>
         </div>
-        <details>
-          <summary>What does a remodel cost in Dallas?</summary>
-          <p>It depends on scope and finishes, but you'll see a full fixed price in our proposal — no moving targets.</p>
-        </details>
-        <details>
-          <summary>How long will my project take?</summary>
-          <p>Kitchens typically run 8–12 weeks; whole-home remodels 4–8 months. We share a written schedule before we start.</p>
-        </details>
-        <details>
-          <summary>Do you really offer fixed pricing?</summary>
-          <p>Yes. Change orders only happen if you change the scope.</p>
-        </details>
-        <details>
-          <summary>What does your warranty cover?</summary>
-          <p>1 year on workmanship, 2 years on major systems, and 10 years on structural.</p>
-        </details>
-        <details>
-          <summary>Can we live in our home during the remodel?</summary>
-          <p>Usually yes — we plan phasing and dust control around your daily life.</p>
-        </details>
-        <details>
-          <summary>What's the first step?</summary>
-          <p>Book a consultation. We'll walk the space, talk goals, and outline what's possible.</p>
-        </details>
+        <div class="wrap">
+          <details>
+            <summary>What does a remodel cost in Dallas?</summary>
+            <p>It depends on scope and finishes, but you'll see a full fixed price in our proposal — no moving targets. Our 2026 DFW cost guide breaks down typical ranges by project type.</p>
+          </details>
+          <details>
+            <summary>How long will my project take?</summary>
+            <p>Kitchens typically run 8–12 weeks; whole-home remodels 4–8 months. We share a written schedule before we start.</p>
+          </details>
+          <details>
+            <summary>Do you really offer fixed pricing?</summary>
+            <p>Yes. We finalize plans and selections before construction so we can give you a real, fixed price. Change orders only happen if you change the scope.</p>
+          </details>
+          <details>
+            <summary>What does your warranty cover?</summary>
+            <p>1 year on workmanship, 2 years on major systems, and 10 years on structural — written into every contract.</p>
+          </details>
+          <details>
+            <summary>Can we live in our home during the remodel?</summary>
+            <p>Usually yes — we plan phasing and dust control around your daily life. For some whole-home projects, temporary housing is the cleaner option.</p>
+          </details>
+          <details>
+            <summary>What's the first step to booking a consultation?</summary>
+            <p>Fill out the estimate form or call (214) 972-6402. We'll set up a no-pressure visit to your home.</p>
+          </details>
+        </div>
       </div>
     </section>
 
-    <section id="contact" class="cta-strip">
+    <section class="contact-strip" id="contact">
       <div class="container">
+        <p class="eyebrow" style="color:#f6dfa6;">Contact Us</p>
         <h2>Ready to start your project?</h2>
-        <p>Tell us about your home. We'll come back with a real plan and a real price.</p>
-        <a class="btn btn-outline" href="tel:2149726402">Call (214) 972-6402</a>
+        <p>Tell us about your home. We'll come back with a real plan and a real price — within 24 business hours.</p>
+        <div class="btns">
+          <a class="btn btn-light" href="tel:2149726402">📞 (214) 972-6402</a>
+          <a class="btn btn-outline" href="mailto:finhomecc@gmail.com">✉ finhomecc@gmail.com</a>
+        </div>
       </div>
     </section>
 
@@ -541,18 +640,20 @@
       <div class="container">
         <div class="grid">
           <div>
-            <div class="logo" style="margin-bottom: 1rem;">
-              <div class="logo-mark">FH</div>
-              <div class="logo-text">
-                <strong style="color:#fff;">Fin Home</strong>
-                <span>Custom Contracting</span>
-              </div>
-            </div>
-            <p>13375 N Stemmons Fwy Ste 410<br/>Dallas, TX 75234</p>
+            <a class="logo" href="#" style="margin-bottom: 1.2rem;">
+              <img src="https://finhomecontracting.com/wp-content/uploads/2025/11/FHLogo_BRG_Web.png" alt="" style="height:56px; filter: brightness(1.1);" />
+            </a>
+            <p style="margin-top: 1rem;">13375 N Stemmons Fwy Ste 410<br/>Dallas, TX 75234</p>
             <p>
               <a href="tel:2149726402">(214) 972-6402</a><br/>
               <a href="mailto:finhomecc@gmail.com">finhomecc@gmail.com</a>
             </p>
+            <div class="social" aria-label="Social links">
+              <a href="#" aria-label="Facebook">f</a>
+              <a href="#" aria-label="Instagram">◎</a>
+              <a href="#" aria-label="YouTube">▶</a>
+              <a href="#" aria-label="TikTok">♪</a>
+            </div>
           </div>
           <div>
             <h4>Learn More</h4>
@@ -567,17 +668,17 @@
             <h4>DFW Cost Guides</h4>
             <ul>
               <li><a href="#">Home Remodeling</a></li>
-              <li><a href="#">Kitchen</a></li>
-              <li><a href="#">Bathroom</a></li>
+              <li><a href="#">Kitchen Remodel</a></li>
+              <li><a href="#">Bathroom Remodel</a></li>
               <li><a href="#">Home Building</a></li>
             </ul>
           </div>
           <div>
-            <h4>National Guides</h4>
+            <h4>National Cost Guides</h4>
             <ul>
               <li><a href="#">Home Remodeling</a></li>
-              <li><a href="#">Kitchen</a></li>
-              <li><a href="#">Bathroom</a></li>
+              <li><a href="#">Kitchen Remodel</a></li>
+              <li><a href="#">Bathroom Remodel</a></li>
               <li><a href="#">Home Building</a></li>
             </ul>
           </div>
@@ -592,7 +693,7 @@
           </div>
         </div>
         <div class="legal">
-          <span>© Fin Home Custom Contracting · Privacy Policy · Terms of Service</span>
+          <span>© 2026 Fin Home Custom Contracting LLC. All rights reserved. · <a href="#">Privacy Policy</a> · <a href="#">Terms of Service</a></span>
           <span>Recreation built for demo purposes.</span>
         </div>
       </div>
