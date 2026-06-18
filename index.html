@@ -342,18 +342,23 @@
             <span>6× Best of Houzz · 2021–2026</span>
           </div>
         </div>
-        <form class="estimate" onsubmit="event.preventDefault(); alert('Thanks — we\'ll reply within 24 business hours.');">
+        <form class="estimate" action="https://formsubmit.co/gupta.aaryan@gmail.com" method="POST">
+          <input type="hidden" name="_subject" value="New Fin Home estimate request" />
+          <input type="hidden" name="_template" value="table" />
+          <input type="hidden" name="_captcha" value="false" />
+          <input type="hidden" name="_next" value="https://whiterain97.github.io/hello-site/?sent=1" />
+          <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off" />
           <p class="eyebrow">No Pressure · Reply in 24 Hrs</p>
           <h2>Get Your Remodeling Estimate</h2>
           <p class="reply">Tell us about your project. We'll respond within 24 business hours.</p>
           <label for="name">Name</label>
-          <input id="name" type="text" required />
+          <input id="name" name="name" type="text" required />
           <label for="phone">Phone</label>
-          <input id="phone" type="tel" required />
+          <input id="phone" name="phone" type="tel" required />
           <label for="email">Email</label>
-          <input id="email" type="email" required />
+          <input id="email" name="email" type="email" required />
           <label for="project">Project Type</label>
-          <select id="project">
+          <select id="project" name="project">
             <option>Whole-Home Remodel</option>
             <option>Kitchen Remodel</option>
             <option>Bathroom Remodel</option>
