@@ -134,6 +134,21 @@
       .stories { background: var(--soft); text-align: center; padding: 4rem 0; }
       .stories h2 { font-style: italic; }
       .stories .stars { color: var(--gold); font-size: 1.4rem; letter-spacing: .15em; margin: .5rem 0 1.2rem; }
+      .stories .videos {
+        display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem;
+        margin-top: 2.5rem; text-align: left;
+      }
+      @media (max-width: 900px) { .stories .videos { grid-template-columns: 1fr; } }
+      .video {
+        background: #fff; border: 1px solid var(--line);
+        overflow: hidden;
+      }
+      .video .frame {
+        position: relative; aspect-ratio: 16/9; background: #000;
+      }
+      .video .frame iframe {
+        position: absolute; inset: 0; width: 100%; height: 100%; border: 0;
+      }
 
       /* Portfolio */
       .portfolio .grid {
@@ -376,8 +391,24 @@
         <p class="eyebrow">Fin Home Stories</p>
         <h2>What Dallas Homeowners Say</h2>
         <div class="stars">★ ★ ★ ★ ★</div>
-        <p style="max-width: 60ch; margin: 0 auto 1.5rem; color: var(--muted);">Hear directly from the families we've remodeled for across the DFW Metroplex.</p>
-        <a class="btn" href="#">Watch Their Stories</a>
+        <p style="max-width: 60ch; margin: 0 auto; color: var(--muted);">Hear directly from the families we've remodeled for across the DFW Metroplex.</p>
+        <div class="videos">
+          <div class="video">
+            <div class="frame">
+              <iframe src="https://www.youtube.com/embed/Y7y8bRW9EMQ" title="Fin Home Story" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+          </div>
+          <div class="video">
+            <div class="frame">
+              <iframe src="https://www.youtube.com/embed/BiLPzRKc6Ao" title="Fin Home Story" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+          </div>
+          <div class="video">
+            <div class="frame">
+              <iframe src="https://www.youtube.com/embed/uR7yyRoGLQo" title="Fin Home Story" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
 
